@@ -18,17 +18,37 @@ namespace Onion.Service.Service
         }
         public async Task<bool> AddAsync(UserVM userVM)
         {
-            var obj = new TblUser();
-            obj.FirstName = userVM.FirstName;
-            obj.MiddleName = userVM.MiddleName;
-            obj.LastName = userVM.LastName;
-            var result = await _userRepository.Add(obj);
-            return result;
+            try
+            {
+                var obj = new TblUser();
+                obj.FirstName = userVM.FirstName;
+                obj.MiddleName = userVM.MiddleName;
+                obj.LastName = userVM.LastName;
+                var result = await _userRepository.Add(obj);
+                return result;
+            }
+            catch (Exception ex)
+            {
+
+                return false;
+            }
+
+
+         
         }
         public async Task<bool> DeleteAsync(long id)
         {
-            var result = await _userRepository.Delete(id);
-            return result;
+            try
+            {
+                var result = await _userRepository.Delete(id);
+                return result;
+            }
+            catch (Exception ex)
+            {
+
+               return false;
+            }
+      
         }
 
         public async Task<List<UserVM>> GetAllAsync()
@@ -61,13 +81,22 @@ namespace Onion.Service.Service
 
         public async Task<bool> UpdateAsync(UserVM userVM)
         {
-            var obj = new TblUser();
-            obj.Id = userVM.Id;
-            obj.FirstName = userVM.FirstName;
-            obj.MiddleName = userVM.MiddleName;
-            obj.LastName = userVM.LastName;
-            var result = await _userRepository.Update(obj);
-            return result;
+            try
+            {
+                var obj = new TblUser();
+                obj.Id = userVM.Id;
+                obj.FirstName = userVM.FirstName;
+                obj.MiddleName = userVM.MiddleName;
+                obj.LastName = userVM.LastName;
+                var result = await _userRepository.Update(obj);
+                return result;
+            }
+            catch (Exception ex)
+            {
+
+                return false;
+            }
+           
         }
     }
 }
