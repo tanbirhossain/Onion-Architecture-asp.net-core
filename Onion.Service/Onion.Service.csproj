@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Onion.Repository\Onion.Repository.csproj" />
-    <ProjectReference Include="..\Onion.ViewModel\Onion.ViewModel.csproj" />
+    <ProjectReference Include="..\Onion.ViewModel\Onion.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

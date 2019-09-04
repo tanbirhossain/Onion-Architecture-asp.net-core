@@ -3,8 +3,8 @@ using Onion.Service.Interface;
 using Onion.Test;
 using Onion.Web.Controllers;
 using Microsoft.Extensions.DependencyInjection;
-using Onion.ViewModel;
 using System.Threading.Tasks;
+using Onion.Infrastructure;
 
 namespace Onion.Test
 {
@@ -24,7 +24,7 @@ namespace Onion.Test
         [Test]
         public async Task UserServiceAdd_TestAsync()
         {
-            var user = new UserVM {
+            var user = new UserDM {
                 FirstName = "Mohammed",
                 MiddleName = "Tanbir",
                 LastName = "Hossain"

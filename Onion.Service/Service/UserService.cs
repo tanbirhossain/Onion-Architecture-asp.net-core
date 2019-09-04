@@ -1,7 +1,7 @@
-﻿using Onion.Repository.DB;
+﻿using Onion.Infrastructure;
+using Onion.Repository.DB;
 using Onion.Repository.Interface;
 using Onion.Service.Interface;
-using Onion.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,14 +16,14 @@ namespace Onion.Service.Service
         {
             _userRepository = userRepository;
         }
-        public async Task<bool> AddAsync(UserVM userVM)
+        public async Task<bool> AddAsync(UserDM userDM)
         {
             try
             {
                 var obj = new TblUser();
-                obj.FirstName = userVM.FirstName;
-                obj.MiddleName = userVM.MiddleName;
-                obj.LastName = userVM.LastName;
+                obj.FirstName = userDM.FirstName;
+                obj.MiddleName = userDM.MiddleName;
+                obj.LastName = userDM.LastName;
                 var result = await _userRepository.Add(obj);
                 return result;
             }
@@ -51,13 +51,13 @@ namespace Onion.Service.Service
       
         }
 
-        public async Task<List<UserVM>> GetAllAsync()
+        public async Task<List<UserDM>> GetAllAsync()
         {
-            var userList = new List<UserVM>();
+            var userList = new List<UserDM>();
             var result = await _userRepository.GetAll();
             foreach (var item in result)
             {
-                userList.Add(new UserVM
+                userList.Add(new UserDM
                 {
                     Id = item.Id,
                     FirstName = item.FirstName,
@@ -68,26 +68,26 @@ namespace Onion.Service.Service
             return userList;
         }
 
-        public async Task<UserVM> GetByIdAsync(long id)
+        public async Task<UserDM> GetByIdAsync(long id)
         {
             var result = await _userRepository.GetById(id);
-            var userVM = new UserVM();
-            userVM.Id = result.Id;
-            userVM.FirstName = result.FirstName;
-            userVM.MiddleName = result.MiddleName;
-            userVM.LastName = result.LastName;
-            return userVM;
+            var userDM = new UserDM();
+            userDM.Id = result.Id;
+            userDM.FirstName = result.FirstName;
+            userDM.MiddleName = result.MiddleName;
+            userDM.LastName = result.LastName;
+            return userDM;
         }
 
-        public async Task<bool> UpdateAsync(UserVM userVM)
+        public async Task<bool> UpdateAsync(UserDM userDM)
         {
             try
             {
                 var obj = new TblUser();
-                obj.Id = userVM.Id;
-                obj.FirstName = userVM.FirstName;
-                obj.MiddleName = userVM.MiddleName;
-                obj.LastName = userVM.LastName;
+                obj.Id = userDM.Id;
+                obj.FirstName = userDM.FirstName;
+                obj.MiddleName = userDM.MiddleName;
+                obj.LastName = userDM.LastName;
                 var result = await _userRepository.Update(obj);
                 return result;
             }

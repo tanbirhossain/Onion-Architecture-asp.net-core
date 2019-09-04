@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Onion.Infrastructure;
 using Onion.Service.Interface;
-using Onion.ViewModel;
 using Onion.Web.Models;
 
 namespace Onion.Web.Controllers
@@ -54,7 +54,7 @@ namespace Onion.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,MiddleName")] UserVM user)
+        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,MiddleName")] UserDM user)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace Onion.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(long id, [Bind("Id,FirstName,LastName,MiddleName")] UserVM user)
+        public async Task<IActionResult> Edit(long id, [Bind("Id,FirstName,LastName,MiddleName")] UserDM user)
         {
             if (id != user.Id)
             {

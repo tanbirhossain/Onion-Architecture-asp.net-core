@@ -30,7 +30,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Onion.Ioc\Onion.Ioc.csproj" />
     <ProjectReference Include="..\Onion.Service\Onion.Service.csproj" />
-    <ProjectReference Include="..\Onion.ViewModel\Onion.ViewModel.csproj" />
+    <ProjectReference Include="..\Onion.ViewModel\Onion.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

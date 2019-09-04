@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Onion.Ioc\Onion.Ioc.csproj" />
-    <ProjectReference Include="..\Onion.ViewModel\Onion.ViewModel.csproj" />
+    <ProjectReference Include="..\Onion.ViewModel\Onion.Infrastructure.csproj" />
     <ProjectReference Include="..\Onion.Web\Onion.Web.csproj" />
   </ItemGroup>
 

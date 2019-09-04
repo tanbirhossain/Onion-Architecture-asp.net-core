@@ -1,4 +1,4 @@
-﻿using Onion.ViewModel;
+﻿using Onion.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,10 +8,10 @@ namespace Onion.Service.Interface
 {
    public interface IUserService
     {
-        Task<bool> AddAsync(UserVM userVM);
-        Task<bool> UpdateAsync(UserVM userVM);
-        Task<List<UserVM>> GetAllAsync();
-        Task<UserVM> GetByIdAsync(long id);
+        Task<bool> AddAsync(UserDM userDM);
+        Task<bool> UpdateAsync(UserDM userDM);
+        Task<List<UserDM>> GetAllAsync();
+        Task<UserDM> GetByIdAsync(long id);
         Task<bool> DeleteAsync(long id);
     }
 }

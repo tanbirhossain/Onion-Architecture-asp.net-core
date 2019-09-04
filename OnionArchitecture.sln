@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Onion.Ioc", "Onion.Ioc\Onio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Onion.Web", "Onion.Web\Onion.Web.csproj", "{675FA1B2-626A-4BD5-9845-2FB21EDF6670}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onion.ViewModel", "Onion.ViewModel\Onion.ViewModel.csproj", "{F2A2B71C-D98B-482D-B0AC-A7099E34BDCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Onion.Infrastructure", "Onion.ViewModel\Onion.Infrastructure.csproj", "{F2A2B71C-D98B-482D-B0AC-A7099E34BDCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
