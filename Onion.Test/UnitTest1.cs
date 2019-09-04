@@ -1,10 +1,10 @@
 using NUnit.Framework;
-using Onion.Service.Interface;
 using Onion.Test;
 using Onion.Web.Controllers;
 using Microsoft.Extensions.DependencyInjection;
 using System.Threading.Tasks;
 using Onion.Infrastructure;
+using Onion.Service;
 
 namespace Onion.Test
 {

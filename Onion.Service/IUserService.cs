@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Onion.Service.Interface
-{
+namespace Onion.Service
+{ 
    public interface IUserService
     {
         Task<bool> AddAsync(UserDM userDM);

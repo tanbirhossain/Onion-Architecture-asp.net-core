@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Onion.Repository.Interface
+namespace Onion.Repository
 {
    public interface IUserRepository
     {

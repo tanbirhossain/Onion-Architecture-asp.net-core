@@ -1,9 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Onion.Repository.DB;
-using Onion.Repository.Interface;
-using Onion.Repository.Repository;
-using Onion.Service.Interface;
-using Onion.Service.Service;
+using Onion.Repository;
+using Onion.Service;
 using System;
 using System.Collections.Generic;
 using System.Text;

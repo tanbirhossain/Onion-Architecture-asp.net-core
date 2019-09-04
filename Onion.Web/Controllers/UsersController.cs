@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Onion.Infrastructure;
-using Onion.Service.Interface;
+using Onion.Service;
 using Onion.Web.Models;
 
 namespace Onion.Web.Controllers

@@ -1,13 +1,13 @@
 ﻿using Onion.Infrastructure;
+using Onion.Repository;
 using Onion.Repository.DB;
-using Onion.Repository.Interface;
-using Onion.Service.Interface;
+
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Onion.Service.Service
+namespace Onion.Service
 {
     public class UserService : IUserService
     {
