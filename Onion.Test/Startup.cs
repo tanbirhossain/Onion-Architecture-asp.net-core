@@ -2,12 +2,9 @@
 using NUnit.Framework;
 using Onion.Ioc;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Onion.Test
 {
-
     [SetUpFixture]
     public class Startup
     {
@@ -28,6 +25,5 @@ namespace Onion.Test
             services.ConfigureIOC();
             return services.BuildServiceProvider();
         }
-
     }
 }

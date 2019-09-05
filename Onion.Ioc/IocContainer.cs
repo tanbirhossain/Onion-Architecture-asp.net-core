@@ -12,6 +12,6 @@ namespace Onion.Ioc
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IUserService, UserService>();
             services.AddDbContext<OnionDBContext>();
-        }
+        } 
     }
 }

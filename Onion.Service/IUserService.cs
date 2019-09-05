@@ -1,12 +1,10 @@
 ﻿using Onion.Infrastructure;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Onion.Service
-{ 
-   public interface IUserService
+{
+    public interface IUserService
     {
         Task<bool> AddAsync(UserDM userDM);
         Task<bool> UpdateAsync(UserDM userDM);

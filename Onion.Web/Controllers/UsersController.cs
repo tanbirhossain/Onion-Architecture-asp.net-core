@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using Onion.Infrastructure;
 using Onion.Service;
-using Onion.Web.Models;
 
 namespace Onion.Web.Controllers
 {
+
     public class UsersController : Controller
     {
         private readonly IUserService _userService;
@@ -132,4 +127,6 @@ namespace Onion.Web.Controllers
         }
 
     }
+
+
 }
