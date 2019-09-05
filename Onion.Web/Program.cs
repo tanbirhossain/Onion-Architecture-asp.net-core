@@ -25,4 +25,4 @@ namespace Onion.Web
 //#1.  Install-Package Microsoft.EntityFrameworkCore.SqlServer
 //#2.  Install-Package Microsoft.EntityFrameworkCore.Tools
 //#3    Install-Package Microsoft.EntityFrameworkCore.Design 
-//#4. Scaffold-DbContext "Server= DESKTOP-1TP3BJN;Database=OnionDB;user id= sa;password= pasicpasic;Trusted_Connection=True;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models 
+//#4. Scaffold-DbContext "Server= DESKTOP-1TP3BJN;Database=OnionDB;user id= sa;password= 123456;Trusted_Connection=True;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models 

@@ -22,7 +22,7 @@ namespace Onion.Repository.DB
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server= DESKTOP-1TP3BJN;Database=OnionDB;user id= sa;password= pasicpasic;Trusted_Connection=True;MultipleActiveResultSets=true");
+                optionsBuilder.UseSqlServer("Server= DESKTOP-1TP3BJN;Database=OnionDB;user id= sa;password= 123456;Trusted_Connection=True;MultipleActiveResultSets=true");
             }
         }
 
