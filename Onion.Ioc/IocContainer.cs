@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Onion.Repository.DB;
 using Onion.Repository;
+using Onion.Repository.DB;
 using Onion.Service;
 
 namespace Onion.Ioc
@@ -12,6 +12,6 @@ namespace Onion.Ioc
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IUserService, UserService>();
             services.AddDbContext<OnionDBContext>();
-        } 
+        }
     }
 }

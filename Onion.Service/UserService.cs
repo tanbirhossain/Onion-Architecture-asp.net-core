@@ -32,7 +32,7 @@ namespace Onion.Service
             }
 
 
-         
+
         }
         public async Task<bool> DeleteAsync(long id)
         {
@@ -44,9 +44,9 @@ namespace Onion.Service
             catch (Exception ex)
             {
 
-               return false;
+                return false;
             }
-      
+
         }
 
         public async Task<List<UserDM>> GetAllAsync()
@@ -94,10 +94,8 @@ namespace Onion.Service
 
                 return false;
             }
-           
+
         }
     }
-
-
 
 }

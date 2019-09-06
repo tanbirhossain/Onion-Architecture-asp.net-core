@@ -1,7 +1,7 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Onion.Infrastructure;
 using Onion.Service;
+using System.Threading.Tasks;
 
 namespace Onion.Web.Controllers
 {
@@ -60,7 +60,7 @@ namespace Onion.Web.Controllers
             return View(user);
         }
 
-        // GET: TblUsers/Edit/5
+        // GET: Users/Edit/5
         public async Task<IActionResult> Edit(long? id)
         {
             if (id == null)
@@ -90,10 +90,10 @@ namespace Onion.Web.Controllers
 
             if (ModelState.IsValid)
             {
-                
-                   await _userService.UpdateAsync(user);
-                 
-              
+
+                await _userService.UpdateAsync(user);
+
+
                 return RedirectToAction(nameof(Index));
             }
             return View(user);
@@ -108,7 +108,7 @@ namespace Onion.Web.Controllers
             }
 
             var user = await _userService.GetByIdAsync(id.Value);
-               
+
             if (user == null)
             {
                 return NotFound();

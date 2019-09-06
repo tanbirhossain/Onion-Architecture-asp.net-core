@@ -18,8 +18,8 @@ namespace Onion.Repository
         {
             try
             {
-               await _context.TblUser.AddAsync(user);
-               await _context.SaveChangesAsync();
+                await _context.TblUser.AddAsync(user);
+                await _context.SaveChangesAsync();
                 return true;
             }
             catch (Exception ex)
@@ -50,7 +50,7 @@ namespace Onion.Repository
 
         public async Task<List<TblUser>> GetAll()
         {
-            var result =await _context.TblUser.ToListAsync();
+            var result = await _context.TblUser.ToListAsync();
             return result;
         }
 
@@ -72,7 +72,7 @@ namespace Onion.Repository
             {
                 return false;
             }
-         
+
         }
     }
 }

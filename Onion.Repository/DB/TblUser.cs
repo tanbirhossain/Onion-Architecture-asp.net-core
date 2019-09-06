@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Onion.Repository.DB
+﻿namespace Onion.Repository.DB
 {
     public partial class TblUser
     {
